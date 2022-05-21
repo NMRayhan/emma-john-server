@@ -48,6 +48,10 @@ app.get("/", (req, res) => {
   res.send("john is running waiting for emma");
 });
 
+app.get('/hero', (req, res)=>{
+  res.send("hello from heroku API")
+})
+
 app.listen(port, () => {
   console.log("emma john running in ", port);
 });
